@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeActivity">
+
+    <EditText
+        android:id="@+id/change_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="изменить: ИМЯ" />
+
+    <EditText
+        android:id="@+id/change_surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="изменить: ФАМИЛИЮ "
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/change_name"/>
+
+    <EditText
+        android:id="@+id/change_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="изменить: ГРУППУ"
+        app:layout_constraintTop_toBottomOf="@+id/change_surname"/>
+
+    <EditText
+        android:id="@+id/change_yearOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="изменить: ДЕНЬ РОЖДЕНИЯ"
+        app:layout_constraintTop_toBottomOf="@+id/change_group"/>
+
+    <EditText
+        android:id="@+id/change_grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="изменить: ОЦЕНКИ"
+        app:layout_constraintTop_toBottomOf="@+id/change_yearOfBirth"/>
+
+    <Button
+        android:id="@+id/save_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.660" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
