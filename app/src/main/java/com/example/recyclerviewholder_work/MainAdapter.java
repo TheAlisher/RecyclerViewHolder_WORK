@@ -11,29 +11,23 @@ import java.util.ArrayList;
 
 public class MainAdapter extends RecyclerView.Adapter<MainViewHolder> {
 
-    private ArrayList<StudentsFullInformation> list;
+    private ArrayList<String> list;
     onClick onClick;
 
     public MainAdapter() {
         list = new ArrayList<>();
-        /*for (int i = 0; i < data.size(); i++) {
-            int rangeFrom = 1;
+        for (int i = 0; i < 1000; i++) {
+            list.add("Abenov ALisher");
+            /*int rangeFrom = 1;
             int rangeTo = 10;
-            int randomGroup = rangeFrom + (int) (Math.random() * rangeTo);
-        }*/
-        /*data.add("Christian Bale | " + "g:" + 3);
-        data.add("Sebastian Stane | " + "g: " + 2);
-        data.add("James Holiday | " + "g:" + 5);
-        data.add("Robert Downey jr | " + "g:" + 2);
-        data.add("Chris Evans | " + "g:" + 7);*/
+            int randomGroup = rangeFrom + (int) (Math.random() * rangeTo);*/
+        }
     }
 
     public void update(ArrayList<StudentsFullInformation> studentsFullInformation) {
-        list = studentsFullInformation;
+        //list = studentsFullInformation;
         notifyDataSetChanged();
     }
-
-
 
     @NonNull
     @Override
@@ -47,7 +41,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MainViewHolder holder, int position) {
-        holder.onBind(list.get(position));
+       // holder.onBind(list.get(position));
         holder.listener = onClick;
     }
 

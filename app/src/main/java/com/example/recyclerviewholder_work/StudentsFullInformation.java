@@ -1,8 +1,7 @@
 package com.example.recyclerviewholder_work;
 
 public class StudentsFullInformation {
-    private String name, surname, yearOfBirth;
-    private Integer group, grade;
+    private String name, surname, yearOfBirth, group, grade;
 
     public String getName() {
         return name;
@@ -28,19 +27,19 @@ public class StudentsFullInformation {
         this.yearOfBirth = yearOfBirth;
     }
 
-    public Integer getGroup() {
+    public String getGroup() {
         return group;
     }
 
-    public void setGroup(Integer group) {
+    public void setGroup(String group) {
         this.group = group;
     }
 
-    public Integer getGrade() {
+    public String getGrade() {
         return grade;
     }
 
-    public void setGrade(Integer grade) {
+    public void setGrade(String grade) {
         this.grade = grade;
     }
 }
